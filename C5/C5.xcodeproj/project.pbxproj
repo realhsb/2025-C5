@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6CD790F92E4DBA8900B117F7 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD790F82E4DBA8900B117F7 /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6CA89AD82E4B2F24001E6D70 /* C5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD790F92E4DBA8900B117F7 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = C5;
 			packageProductDependencies = (
+				6CD790F82E4DBA8900B117F7 /* SwiftSoup */,
 			);
 			productName = C5;
 			productReference = 6CA89AD82E4B2F24001E6D70 /* C5.app */;
@@ -107,6 +113,10 @@
 			);
 			mainGroup = 6CA89ACF2E4B2F24001E6D70;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6CD790F62E4DBA7D00B117F7 /* XCRemoteSwiftPackageReference "Moya" */,
+				6CD790F72E4DBA8900B117F7 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6CA89AD92E4B2F24001E6D70 /* Products */;
 			projectDirPath = "";
@@ -333,6 +343,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CD790F62E4DBA7D00B117F7 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		6CD790F72E4DBA8900B117F7 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CD790F82E4DBA8900B117F7 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD790F72E4DBA8900B117F7 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CA89AD02E4B2F24001E6D70 /* Project object */;
 }
